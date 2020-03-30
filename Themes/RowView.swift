@@ -25,10 +25,12 @@ public struct RowView:View{
         self.index = index
         //self._isHidden = isHidden
     }
+    //MARK: SwiftUI Body
     public var body: some View{
         HStack{
             Image(systemName: (self.index >= 0 && self.index <= 50 ? "\(self.index).circle":"nosign"))
                 .font(.largeTitle)
+            //MARK: Geometery Reader
             GeometryReader{ geometry in
                 HStack{
                     
